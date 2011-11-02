@@ -1,0 +1,13 @@
+Simple C program that sends the ON/OFF commands to the switch file in
+/sys/kernel/debug/vgaswitcheroo/switch.  We are writing a C program because
+a shell script is not safe to be run with setuid as root.
+
+Takes either ON or OFF as its only argument.  ON turns the discrete graphics
+on, and OFF turns it off.
+
+NOTE: This code has only been tested on Xubuntu 11.10 with the latest
+version of asus-switcheroo from awilliam's github repo.
+https://github.com/awilliam/asus-switcheroo
+
+This code is open source, but I have no idea what license to use.
+
